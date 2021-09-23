@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&amp;display=swap"
         rel="stylesheet">
     <link href="theme/plugins/plyr/plyr.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="theme/plugins/simple-lightbox/simple-lightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="theme/plugins/slick-carousel/slick-lightbox.css">
     <link rel="stylesheet" type="text/css" href="theme/plugins/slick-carousel/slick.css">
     <link rel="stylesheet" type="text/css" href="theme/plugins/slick-carousel/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="theme/plugins/pdf/flipbook.style.css">
@@ -28,7 +28,6 @@
     <script src="theme/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/b68b7d8171.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="socket.io/socket.io.js"></script>
-    <script type="text/javascript" src="theme/plugins/galleria/galleria.min.js"></script>
     <script type="text/javascript">
         var config = {
             "converted": "completed",
@@ -125,29 +124,45 @@
     <div class="container cs-container highlights-slider">
         <div class="highlights">
             <div class="highlight-item">
-                <div class="highlight-item-wrapper"><img src="theme/images/exp_highlights (8).jpg"></div>
-            </div>
+                <div class="highlight-item-wrapper">
+                <a href="#0"><img src="theme/images/exp_highlights (8).jpg"></a>
+            </div></div>
             <div class="highlight-item">
-                <div class="highlight-item-wrapper"><img src="theme/images/exp_highlights (4).jpg"></div>
-            </div>
+            <div class="highlight-item-wrapper">
+                <a href="#0"><img src="theme/images/exp_highlights (4).jpg"></a>
+            </div></div>
             <div class="highlight-item">
-                <div class="highlight-item-wrapper"><img src="theme/images/exp_highlights (6).jpg"></div>
-            </div>
+            <div class="highlight-item-wrapper">
+                <a href="#0"><img src="theme/images/exp_highlights (6).jpg"></a>
+            </div></div>
             <div class="highlight-item">
-                <div class="highlight-item-wrapper"><img src="theme/images/exp_highlights (3).jpg"></div>
-            </div>
+            <div class="highlight-item-wrapper">
+                <a href="#0"><img src="theme/images/exp_highlights (3).jpg"></a>
+            </div></div>
             <div class="highlight-item">
-                <div class="highlight-item-wrapper"><img src="theme/images/exp_highlights (2).jpg"></div>
-            </div>
+            <div class="highlight-item-wrapper">
+                <a href="#0"><img src="theme/images/exp_highlights (2).jpg"></a>
+            </div></div>
             <div class="highlight-item">
-                <div class="highlight-item-wrapper"><img src="theme/images/exp_highlights (7).jpg"></div>
-            </div>
+            <div class="highlight-item-wrapper">
+                <a href="#0"><img src="theme/images/exp_highlights (7).jpg"></a>
+            </div></div>
             <div class="highlight-item">
-                <div class="highlight-item-wrapper"><img src="theme/images/exp_highlights (9).jpg"></div>
-            </div>
+            <div class="highlight-item-wrapper">
+                <a href="#0"><img src="theme/images/exp_highlights (9).jpg"></a>
+            </div></div>
         </div>
     </div>
 </div>
+<script src="theme/plugins/slick-carousel/slick-lightbox.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.highlight-item').slickLightbox({
+        src: 'src',
+        itemSelector: '.highlight-item-wrapper img'
+      });
+    });
+  </script>
 <div class="logos-section">
     <h3 class="text-center">As Seen On:</h3>
     <div class="logos justify-content-center">
@@ -172,10 +187,10 @@
     type="hidden" value="606857d78afd5943b8a918f9"><input id="material" type="hidden"
     value="5e2a05c94d04d37842cc8ff9"><input id="material-start" type="hidden" value="0">
     
-<script src="https://cdn.jsdelivr.net/npm/tsparticles@1.28.0/dist/tsparticles.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.5.0/custom-elements-es5-adapter.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.5.0/webcomponents-loader.js"></script>
-<script type="module" src="https://cdn.jsdelivr.net/npm/web-particles@1.1.0/dist/web-particles.min.js"></script>
+<script src="theme/plugins/tsparticles/tsparticles.min.js"></script>
+<script src="theme/plugins/tsparticles/custom-elements-es5-adapter.js"></script>
+<script src="theme/plugins/tsparticles/webcomponents-loader.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/web-particles@1.7.0/dist/web-particles.min.js"></script>
 <script type="text/javascript" src="theme/core/widget_v2.js"></script>
 <script src="theme/plugins/slick-carousel/slick.min.js"></script>
 <script src="theme/theme-js/theme1.js"></script>
