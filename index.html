@@ -26,7 +26,7 @@
     <script src="theme/js/jquery.min.js"></script>
     <script src="theme/js/popper.min.js"></script>
     <script src="theme/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://kit.fontawesome.com/b68b7d8171.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="socket.io/socket.io.js"></script>
     <script type="text/javascript" src="theme/plugins/galleria/galleria.min.js"></script>
     <script type="text/javascript">
@@ -63,6 +63,16 @@
         };
     </script>
 </head>
+<web-particles id="tsparticles"
+    options='{"fps_limit":60,"interactivity":{"detectsOn":"canvas","events":{"onClick":{"enable":true,"mode":"push"},"onHover":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"push":{"particles_nb":4},"repulse":{"distance":200,"duration":0.4}}},"particles":{"number":
+    {
+    "value": 100,
+    "density": {
+    "enable": false,
+    "value_area": 800
+    }
+    },"color":{"value":"#ffffff"},"links":{"color":"#1259be","distance":150,"enable":true,"opacity":0.4,"width":1},"move":{"bounce":false,"direction":"none","enable":true,"outMode":"out","random":false,"speed":2,"straight":false},"number":{"density":{"enable":true,"area":800},"value":80},"opacity":{"value":0.5},"shape":{"type":"circle"},"size":{"random":true,"value":5}},"detectRetina":true}'>
+</web-particles>
 <header>
     <div class="profile container cs-container">
         <div class="avatar-social"><img class="avatar"
@@ -116,13 +126,13 @@
     <div class="container cs-container highlights-slider">
         <div class="highlights">
             <div class="highlight-item">
+                <div class="highlight-item-wrapper"><img src="theme/images/exp_highlights (8).jpg"></div>
+            </div>
+            <div class="highlight-item">
                 <div class="highlight-item-wrapper"><img src="theme/images/exp_highlights (4).jpg"></div>
             </div>
             <div class="highlight-item">
                 <div class="highlight-item-wrapper"><img src="theme/images/exp_highlights (6).jpg"></div>
-            </div>
-            <div class="highlight-item">
-                <div class="highlight-item-wrapper"><img src="theme/images/exp_highlights (8).jpg"></div>
             </div>
             <div class="highlight-item">
                 <div class="highlight-item-wrapper"><img src="theme/images/exp_highlights (3).jpg"></div>
@@ -162,6 +172,11 @@
     value="614b2e053dedae0015c18c03"><input id="contact" type="hidden" value="614b2e043dedae0015c18be7"><input id="user"
     type="hidden" value="606857d78afd5943b8a918f9"><input id="material" type="hidden"
     value="5e2a05c94d04d37842cc8ff9"><input id="material-start" type="hidden" value="0">
+    
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@1.28.0/dist/tsparticles.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.5.0/custom-elements-es5-adapter.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.5.0/webcomponents-loader.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/web-particles@1.1.0/dist/web-particles.min.js"></script>
 <script type="text/javascript" src="theme/core/widget_v2.js"></script>
 <script src="theme/plugins/slick-carousel/slick.min.js"></script>
 <script src="theme/theme-js/theme1.js"></script>
