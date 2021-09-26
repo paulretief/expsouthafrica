@@ -13,8 +13,7 @@
         content="images/vidlogo.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="theme/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&amp;display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet">
     <link href="theme/plugins/plyr/plyr.css" rel="stylesheet">
 
     <!-- Google Tag Manager -->
@@ -83,13 +82,13 @@
             <p class="material-description text-center">High level overview presentation of the eXp Realty brokerage
                 model and agent value proposition</p>
         </div>
+        <script src="theme/plugins/plyr/plyr.min.js"></script>
         <div class="row material-profile-wrapper">
             <div class="material-wrapper mx-2">
                 <div class="video-player-wrapper">
-                    <video id="player" playsinline poster="images/logo.jpg" controls name="media">
-                    <source src="https://media.githubusercontent.com/media/paulretief/expsouthafrica/master/video/expnineminutes.mp4" type="video/mp4"></video>
-                    <script src="theme/plugins/plyr/plyr.min.js"></script>
-                    <script>const player = new Plyr('#player');</script>
+                        <div id="player" data-plyr-provider="vimeo" data-plyr-embed-id="614824264" playsinline poster="images/logo.jpg" controls name="media"></div>
+                    <script>const player = new Plyr('#player', {captions: {active: true}});
+                            window.player = player;</script>
                 </div>
             </div>
         </div>
